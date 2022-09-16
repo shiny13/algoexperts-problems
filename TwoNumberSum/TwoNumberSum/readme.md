@@ -18,7 +18,7 @@ so store the difference and current ith value in the result array and return the
 Otherwise, store the current ith value in the dictionary as the key and continue with the loop.
 
 ```csharp
- foreach (var num in _numbers)
+foreach (var num in _numbers)
 {
     var difference = _targetSum - num;
     if (sumDict.ContainsKey(difference))
@@ -35,7 +35,7 @@ Otherwise, store the current ith value in the dictionary as the key and continue
 
 ## Solution using sorting
 
-The following solution uses O(n log n) time complexity and O(i) space complexity.
+The following solution uses O(n log n) time complexity and O(1) space complexity.
 We can use the built in `Array.Sort()` method, which uses quicksort in `C#` to first sort the array.
 Other languages will also have their own basic sorting library implemented for usage.
 
